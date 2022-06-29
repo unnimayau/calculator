@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 mt-5" id="calculator">
+            <input type="text" id="calc" class="ms-4 mt-3" placeholder="0">
+            <div class="d-grid gap-5 d-md-block m-4">
+                <button class="btn btn-primary ms-4"  onClick="displayNum(7)" type="button">7</button>
+                <button class="btn btn-primary" onClick="displayNum(8)" type="button">8</button>
+                <button class="btn btn-primary "  onClick="displayNum(9)" type="button">9</button>
+                <button class="btn btn-primary "  onClick="displayNum('+')" type="button">+</button><br><br>
+                <button class="btn btn-primary ms-4"  onClick="displayNum(4)" type="button">4</button>
+                <button class="btn btn-primary "  onClick="displayNum(5)" type="button">5</button>
+                <button class="btn btn-primary" onClick="displayNum(6)" type="button">6</button>
+                <button class="btn btn-primary"  onClick="displayNum('*')"type="button">*</button><br><br>
+                <button  class="btn btn-primary ms-4" onClick="displayNum(1)" type="button">1</button>
+                <button class="btn btn-primary"  onClick="displayNum(2)" type="button">2</button>
+                <button class="btn btn-primary" onClick="displayNum(3)" type="button">3</button>
+                <button class="btn btn-primary"  onClick="displayNum('-')" type="button">-</button><br><br>
+                <button class="btn btn-secondary ms-4 "  onClick="clearBox()" type="button">AC</button>
+                <button class="btn btn-primary"  onClick="displayNum(0)" type="button">0</button>
+                <button class="btn btn-primary"onClick="removeItem()" type="button">x</button>
+                <button class="btn btn-primary"   onClick="evaluvateExpr()"type="button">=</button><br>
+              </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    
+</body>
+<script src="./calc.js"></script>
+</html>
